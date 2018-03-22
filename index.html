@@ -6,50 +6,143 @@
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
     <meta charset="utf-8">
-    <title>Celebrity Date</title>
+    <title>Future You</title>
   </head>
   <body>
     <div class="container">
+      <h1>Who Will You Become?!</h1>
       <div class="form1">
-        <form>
-          <h3>Height</h3>
-          <select class="form-control" id="height">
-            <option value="1">Over six feet</option>
-            <option value="2">Between five and six feet</option>
-            <option value="3">Under five feet</option>
-          </select>
-          <h3>Weight</h3>
-          <select class="form-control" id="weight">
-            <option value="1">Over 200 lbs</option>
-            <option value="2">Between 130 and 200lbs</option>
-            <option value="3">Under 130lbs </option>
-          </select>
-            <h3>Age</h3>
-          <select class="form-control" id="age">
-            <option value="1">Over 50 years old</option>
-            <option value="2">Between 30 and 50 years old</option>
-            <option value="3">Under 30 years old</option>
-          </select>
-          <button type="submit" class="btn btn-danger">Find your true love!</button>
+        <form class="well">
+<!-- ROW 1 -->
+          <div class="row">
+            <div class="col-md-4">
+              <h3>Work Ethic</h3>
+              <label class="radio">
+                <input type="radio" name="workethic" value="1" required>
+                Super Star
+              </label>
+              <label class="radio">
+                <input type="radio" name="workethic" value="2">
+                Average
+              </label>
+              <label class="radio">
+                <input type="radio" name="workethic" value="3">
+                Homer Simpson
+              </label>
+            </div>
+            <div class="col-md-4">
+              <h3>Dress</h3>
+              <label class="radio">
+                <input type="radio" name="dress" value="1" required>
+                James Bond
+              </label>
+              <label class="radio">
+                <input type="radio" name="dress" value="2">
+                Average
+              </label>
+              <label class="radio">
+                <input type="radio" name="dress" value="3">
+                Oscar the Grouch
+              </label>
+            </div>
+            <div class="col-md-4">
+              <h3>Attitude</h3>
+              <label class="radio">
+                <input type="radio" name="attitude" value="1" required>
+                Mr. Rogers
+              </label>
+              <label class="radio">
+                <input type="radio" name="attitude" value="2">
+                Average
+              </label>
+              <label class="radio">
+                <input type="radio" name="attitude" value="3">
+                Rorschach
+              </label>
+            </div>
+          </div>
+<!-- ROW 2 -->
+          <div class="row">
+            <div class="col-md-4">
+              <h3>Intelligence</h3>
+              <label class="radio">
+                <input type="radio" name="intelligence" value="1" required>
+                Steven Hawking
+              </label>
+              <label class="radio">
+                <input type="radio" name="intelligence" value="2">
+                Average
+              </label>
+              <label class="radio">
+                <input type="radio" name="intelligence" value="3">
+                Fork in Outlet
+              </label>
+            </div>
+            <div class="col-md-4">
+              <h3>Strength</h3>
+              <label class="radio">
+                <input type="radio" name="strength" value="1" required>
+                Hulk Smash
+              </label>
+              <label class="radio">
+                <input type="radio" name="strength" value="2">
+                Average
+              </label>
+              <label class="radio">
+                <input type="radio" name="strength" value="3">
+                Weakling
+              </label>
+            </div>
+            <div class="col-md-4">
+              <h3>Agility</h3>
+              <label class="radio">
+                <input type="radio" name="agility" value="1" required>
+                Catwoman
+              </label>
+              <label class="radio">
+                <input type="radio" name="agility" value="2">
+                Average
+              </label>
+              <label class="radio">
+                <input type="radio" name="agility" value="3">
+                Jabba the Hutt
+              </label>
+            </div>
+          </div>
+          <div class="crystal-ball">
+            <button type="submit" class="btn btn-danger">Take me to the FUTURE!</button>
+          </div>
         </form>
       </div>
-      <div class="hogan invis">
-        <h3>Hulk Hogan</h3>
-        <img src="imgs/hogan.jpg" alt="">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-      <div class="hulk invis">
-        <h3>The Incredible Hulk</h3>
-        <img src="imgs/hulk.jpg" alt="">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-      <div class="lou invis">
-        <h3>Lou Ferrigno</h3>
-        <img src="imgs/lou.jpg" alt="">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+<!-- RESULTS -->
+      <div class="row">
+        <div class="col-md-6">
+          <h2 class="invis">Employment Track</h2>
+          <div class="ceo invis">
+            <h3 class="bg-success">Best Boss</h3>
+            <img class="full-width" src="imgs/ceo.jpg" alt="">
+          </div>
+          <div class="average invis">
+            <h3 class="bg-info">Just Average</h3>
+            <img class="full-width" src="imgs/average.jpg" alt="">
+          </div>
+          <div class="scumbag invis">
+            <h3 class="bg-warning">CONGRATULATIONS, SCUMBAG!</h3>
+            <img class="full-width" src="imgs/scumbag.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h2 class="invis">Quality of Life</h2>
+          <div class="suv invis">
+            <h3 class="bg-success">Style &amp; Elegance</h3>
+            <img class="full-width" src="imgs/suv.jpg" alt="">
+          </div>
+          <div class="shanty invis">
+            <h3 class="bg-danger">Rustic Bungalow</h3>
+            <img class="full-width" src="imgs/shanty.jpg" alt="">
+          </div>
+        </div>
       </div>
     </div>
-
   </body>
 </html>

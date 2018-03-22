@@ -1,20 +1,31 @@
 $(document).ready(function() {
   $("form").submit(function(event) {
     $(".invis").hide();
-    var height = parseInt($("#height").val());
-    var weight = parseInt($("#weight").val());
-    var age = parseInt($("#age").val());
-    var result = height + weight + age;
+    $("h2.invis").fadeIn();
+    var workEthicPts = parseInt($("input:radio[name=workethic]:checked").val());
+    var dressPts = parseInt($("input:radio[name=dress]:checked").val());
+    var attitudePts = parseInt($("input:radio[name=attitude]:checked").val());
+    var primaryResult = workEthicPts + dressPts + attitudePts;
 
-    if (result > 7) {
-      $(".lou").show();
-    } else if (8 > result && result > 5) {
-      $(".hulk").show();
-    } else  {
-      $(".hogan").show();
+    var strengthPts = parseInt($("input:radio[name=strength]:checked").val());
+    var intelligencePts = parseInt($("input:radio[name=intelligence]:checked").val());
+    var agilityPts = parseInt($("input:radio[name=agility]:checked").val());
+    var secondaryResult = strengthPts + intelligencePts + agilityPts;
+
+
+    if (primaryResult > 7) {
+      $(".scumbag").fadeIn();
+    } else if (8 > primaryResult && primaryResult > 5) {
+      $(".average").fadeIn();
+    } else {
+      $(".ceo").fadeIn();
     };
 
-
+    if (secondaryResult > 6) {
+      $(".shanty").fadeIn();
+    } else {
+      $(".suv").fadeIn();
+    };
 
     event.preventDefault();
   });
