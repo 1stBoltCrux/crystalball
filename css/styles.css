@@ -1,3 +1,7 @@
+.fireworks {
+  background-image: url('../imgs/fireworks.gif');
+}
+
 .invis {
   display: none;
 }

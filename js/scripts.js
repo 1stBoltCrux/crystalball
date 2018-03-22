@@ -1,6 +1,7 @@
 $(document).ready(function() {
   $("form").submit(function(event) {
     $(".invis").hide();
+    $("body").removeClass("fireworks");
     $("h2.invis").fadeIn();
     var workEthicPts = parseInt($("input:radio[name=workethic]:checked").val());
     var dressPts = parseInt($("input:radio[name=dress]:checked").val());
@@ -15,6 +16,7 @@ $(document).ready(function() {
 
     if (primaryResult > 7) {
       $(".scumbag").fadeIn();
+      $("body").addClass("fireworks");
     } else if (8 > primaryResult && primaryResult > 5) {
       $(".average").fadeIn();
     } else {
